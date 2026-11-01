@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Shivani ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#16002e,#6500a8,#e83e8c,#ff9ecb);
+    background-size: 400% 400%;
+    animation: bg 12s infinite alternate;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@keyframes bg {
+    0% {background-position: 0% 50%}
+    100% {background-position: 100% 50%}
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* INTRO SCREEN */
+
+.intro {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg,#240046,#9d168e,#ff70a6);
+}
+
+.envelope {
+    font-size: 100px;
+    animation: bounce 2s infinite;
+    filter: drop-shadow(0 0 20px pink);
+}
+
+@keyframes bounce {
+    50% {transform: translateY(-15px) rotate(5deg)}
+}
+
+.intro h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    margin: 15px;
+    text-shadow: 0 0 20px pink;
+}
+
+.intro p {
+    font-size: 14px;
+    margin: 10px 0 25px;
+}
+
+.open-btn {
+    background: white;
+    color: #a00078;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 35px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 30px #ffb6d9;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    50% {transform: scale(1.07)}
+}
+
+/* MAIN WEBSITE */
+
+.container {
+    max-width: 600px;
+    width: 92%;
+    margin: auto;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #ffffff70;
+    border-radius: 50px;
+    background: #ffffff20;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    text-shadow: 0 0 20px #ff9dcc;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #ffe0f0;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #ffffff20;
+    backdrop-filter: blur(15px);
+    border: 1px solid #ffffff50;
+    border-radius: 25px;
+    padding: 22px;
+    margin: 25px 0;
+    box-shadow: 0 10px 35px #29002e50;
+}
+
+.photo-frame {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0 0 25px #ff9dcc;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.photo-frame img.active {
+    display: block;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0; transform: scale(1.08)}
+    to {opacity: 1; transform: scale(1)}
+}
+
+.photo-caption {
+    margin-top: 15px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+.message {
+    font-size: 14px;
+    line-height: 2;
+    color: #fff1f8;
+    text-align: center;
+}
+
+.message p {
+    margin-bottom: 18px;
+}
+
+.special {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    color: white;
+    text-shadow: 0 0 15px #ffaad5;
+    margin: 25px 0;
+}
+
+.love-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(55px, 12vw, 85px);
+    line-height: 1.3;
+    color: #fff;
+    text-shadow: 0 0 12px #ff8ac4, 0 0 30px #ff008c;
+    animation: heartbeat 2s infinite;
+    margin: 25px 0;
+}
+
+@keyframes heartbeat {
+    50% {transform: scale(1.06)}
+}
+
+.proposal {
+    padding: 25px 15px;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#ffffff30,#ffb6d940);
+    border: 1px solid #ffffff60;
+}
+
+.proposal h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.proposal p {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+button {
+    cursor: pointer;
+}
+
+.yes-btn {
+    margin-top: 22px;
+    background: linear-gradient(45deg,#ff006e,#ff70a6);
+    border: 2px solid white;
+    color: white;
+    border-radius: 50px;
+    padding: 14px 35px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 0 25px #ff6ba8;
+}
+
+.answer {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    margin-top: 25px;
+}
+
+.music-btn {
+    border: 1px solid white;
+    color: white;
+    background: #ffffff20;
+    border-radius: 30px;
+    padding: 12px 22px;
+    margin: 15px;
+}
+
+.footer {
+    margin: 35px 0 15px;
+    font-size: 12px;
+    color: #ffe0ef;
+}
+
+/* FLOATING HEARTS */
+
+.heart {
+    position: fixed;
+    bottom: -40px;
+    pointer-events: none;
+    animation: floatUp linear forwards;
+    z-index: 5;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    pointer-events: none;
+    z-index: 200;
+    animation: confetti 4s linear forwards;
+}
+
+@keyframes confetti {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- INTRO SCREEN -->
+
+<div class="intro" id="intro">
+
+    <div class="envelope">💌</div>
+
+    <h1>Hey Shivani...</h1>
+
+    <p>
+        Someone has a little surprise<br>
+        made with lots of love, just for you.
+    </p>
+
+    <button class="open-btn" onclick="openSurprise()">
+        Open My Surprise ❤️
+    </button>
+
+    <p style="margin-top:20px;font-size:11px;">
+        Made with love, only for you 💗
+    </p>
+
+</div>
+
+
+<!-- MAIN WEBSITE -->
+
+<div class="container hidden" id="main">
+
+    <div class="badge">A LITTLE SURPRISE FOR YOU ✨</div>
+
+    <h1 class="heading">My Sweet Shivani</h1>
+
+    <p class="subtitle">
+        Every beautiful story has someone special...
+        And you are mine. ❤️
+    </p>
+
+
+    <!-- PHOTO SLIDER -->
+
+    <div class="card">
+
+        <div class="photo-frame">
+
+            <img src="img jpg1.jpeg" class="active" alt="Memory 1">
+
+            <img src="img jpg2.jpeg" alt="Memory 2">
+
+            <img src="img jpg3.jpeg" alt="Memory 3">
+
+        </div>
+
+        <div class="photo-caption">
+            My Favourite Person 💗
+        </div>
+
+    </div>
+
+
+    <!-- LOVE MESSAGE -->
+
+    <div class="card message">
+
+        <h2 class="special">Dear Shivani ❤️</h2>
+
+        <p>
+            I just want you to know that you are
+            one of the most beautiful parts of my life.
+        </p>
+
+        <p>
+            Please don't ever feel alone, Shivani.
+            No matter what happens, no matter how
+            difficult life gets, I'll always be
+            there to hold your hand.
+        </p>
+
+        <p>
+            When nobody understands you,
+            I'll listen to you.
+            When you feel weak, I'll support you.
+            And when you feel sad, I'll do my best
+            to bring a smile to your face.
+        </p>
+
+        <p>
+            You don't have to face everything alone.
+            You have someone who genuinely cares
+            about you and wants to see you happy.
+        </p>
+
+        <p>
+            Shinuu, I may not be perfect,
+            but I promise to give you genuine love,
+            respect, care and endless support.
+        </p>
+
+        <p>
+            I don't just want to be a part of
+            your happy moments.
+            I want to stand beside you
+            through every chapter of life.
+        </p>
+
+        <p>
+            No matter who stays or leaves,
+            I want you to remember that
+            you will always have someone
+            cheering for you. ❤️
+        </p>
+
+    </div>
+
+
+    <!-- MAIN PROPOSAL -->
+
+    <div class="love-title">
+        I Love You<br>
+        Shivani ❤️
+    </div>
+
+
+    <div class="proposal">
+
+        <h2>Will You Be Mine Forever? 💍</h2>
+
+        <p>
+            I don't know what the future holds,
+            but I know one thing...
+            I would love to make beautiful memories
+            with you, grow together and choose you
+            every single day.
+        </p>
+
+        <button class="yes-btn" onclick="sayYes()">
+            YES, FOREVER ❤️
+        </button>
+
+        <div class="answer" id="answer"></div>
+
+    </div>
+
+
+    <button class="music-btn" onclick="toggleMusic()" id="musicBtn">
+        🎵 Pause Music
+    </button>
+
+
+    <div class="footer">
+
+        Made with all my heart ❤️
+
+        <br><br>
+
+        For My Shinuu 💗
+
+        <br>
+
+        Forever Yours...
+
+    </div>
+
+</div>
+
+
+<!-- MUSIC -->
+
+<audio id="song" loop preload="auto">
+    <source src="song mp3.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+
+// OPEN SURPRISE AND PLAY SONG
+
+function openSurprise() {
+
+    const intro = document.getElementById("intro");
+    const main = document.getElementById("main");
+    const song = document.getElementById("song");
+
+    intro.style.transition = "1s";
+    intro.style.opacity = "0";
+
+    setTimeout(() => {
+
+        intro.classList.add("hidden");
+        main.classList.remove("hidden");
+
+        window.scrollTo(0,0);
+
+    }, 1000);
+
+    song.play().then(() => {
+
+        document.getElementById("musicBtn").innerHTML =
+        "🎵 Pause Music";
+
+    }).catch(() => {
+
+        document.getElementById("musicBtn").innerHTML =
+        "🎵 Play Music";
+
+    });
+
+    startHearts();
+
+}
+
+
+// MUSIC CONTROL
+
+function toggleMusic() {
+
+    const song = document.getElementById("song");
+    const btn = document.getElementById("musicBtn");
+
+    if(song.paused) {
+
+        song.play();
+
+        btn.innerHTML = "🎵 Pause Music";
+
+    } else {
+
+        song.pause();
+
+        btn.innerHTML = "🎵 Play Music";
+
+    }
+
+}
+
+
+// AUTOMATIC PHOTO SLIDER
+
+let current = 0;
+
+const photos = document.querySelectorAll(".photo-frame img");
+
+function slidePhotos() {
+
+    photos[current].classList.remove("active");
+
+    current = (current + 1) % photos.length;
+
+    photos[current].classList.add("active");
+
+}
+
+setInterval(slidePhotos, 3500);
+
+
+// FLOATING HEARTS
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const hearts = ["❤️","💗","💕","💖","💘","💝"];
+
+    heart.innerHTML =
+    hearts[Math.floor(Math.random()*hearts.length)];
+
+    heart.style.left = Math.random()*100 + "vw";
+
+    heart.style.fontSize =
+    (18 + Math.random()*25) + "px";
+
+    heart.style.animationDuration =
+    (5 + Math.random()*5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(),10000);
+
+}
+
+let heartTimer;
+
+function startHearts() {
+
+    if(heartTimer) return;
+
+    heartTimer = setInterval(createHeart,400);
+
+}
+
+
+// YES BUTTON
+
+function sayYes() {
+
+    const answer = document.getElementById("answer");
+
+    answer.innerHTML =
+    "You just made my heart the happiest! ❤️🥹";
+
+    for(let i=0;i<60;i++) {
+
+        setTimeout(createConfetti,i*40);
+
+    }
+
+}
+
+
+// CONFETTI CELEBRATION
+
+function createConfetti() {
+
+    const item = document.createElement("div");
+
+    item.className = "confetti";
+
+    item.innerHTML =
+    ["❤️","💕","💗","✨","💖","💍"][
+        Math.floor(Math.random()*6)
+    ];
+
+    item.style.left = Math.random()*100 + "vw";
+
+    item.style.fontSize =
+    (15 + Math.random()*25) + "px";
+
+    item.style.animationDuration =
+    (2 + Math.random()*3) + "s";
+
+    document.body.appendChild(item);
+
+    setTimeout(() => item.remove(),5000);
+
+}
+
+</script>
+
+</body>
+</html>
